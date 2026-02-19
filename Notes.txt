@@ -37,3 +37,7 @@ e.g. Categorical Data and continious data.
    and try to link them. like education level may differ the salary, try to plot them both side by side to comapare
    as dependent graph.
    
+
+4. Do Univariate Analysis. This will create a hypothesis on our data.
+   Do Bivariate Analysis. Now test the old hypothesis with the newly fonund Hypothesis if it matches  or not with respect to Target VARIABLE.
+   DO visualize numerical independent variables with respect to target variable.
