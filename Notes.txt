@@ -1,0 +1,39 @@
+Import Data, 
+Split to train, test.
+do feature engineeing.
+
+1. Define the data types of each coloumns and divide them on the basis of that.
+e.g. Categorical Data and continious data.
+* Nominal
+* Ordinal
+* Interval
+* Ratio
+
+| Feature       | Nominal             | Ordinal                  |
+| ------------- | ------------------- | ------------------------ |
+| Order exists? | ❌ No                | ✅ Yes                    |
+| Examples      | Gender, City, Color | Ratings, Education level |
+| Can you rank? | ❌                   | ✅                        |
+
+
+
+| Feature                        | Ordinal                  | Interval          |
+| ------------------------------ | ------------------------ | ----------------- |
+| Has order?                     | ✅                        | ✅                 |
+| Equal distance between values? | ❌                        | ✅                 |
+| Can do arithmetic?             | ❌                        | ✅                 |
+| Example                        | Rating scale (1–5 stars) | Temperature in °C |
+
+2. For Numerical distrubution instead of visualizing in set, as can be done in case of categorical.
+   visualize in terms of single Featue at a time.
+   
+   e.g. Independent Variable (Numerical)
+    There are 4 features that are Numerical: These features have numerical values :
+    (ApplicantIncome, CoapplicantIncome, LoanAmount, Loan_Amount_Term)
+    Firstly, let’s look at the Applicant income distribution:
+
+3. Try to relate from the plot what can be noticed, like if there is a dispairity in plot of income range that 
+   may be due to some reason. if you cant predict actual reason try to figure out using other columns available 
+   and try to link them. like education level may differ the salary, try to plot them both side by side to comapare
+   as dependent graph.
+   
