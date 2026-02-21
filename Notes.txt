@@ -1,3 +1,10 @@
+Steps:
+A. EDA : This is the method where we visualize (not graphically, but imaginariliy with help of graph) the data and try to
+         figure out if there is any relationship in each variable with itself as well as with respect to other.
+B. Data Preprocessing : 
+
+A. EDA 
+
 Import Data, 
 Split to train, test.
 do feature engineeing.
@@ -41,3 +48,24 @@ e.g. Categorical Data and continious data.
 4. Do Univariate Analysis. This will create a hypothesis on our data.
    Do Bivariate Analysis. Now test the old hypothesis with the newly fonund Hypothesis if it matches  or not with respect to Target VARIABLE.
    DO visualize numerical independent variables with respect to target variable.
+
+5. Correlation matrix
+
+
+
+B. Data Preprocessing
+   1. Missing values in Training Dataset
+   * For numerical variables: imputation using mean or median
+   * For categorical variables: imputation using mode.
+   NOTE: inplace=True is depreciated use the standard assignment method only
+   2. Missing values in test Dataset
+   **Note: ** We need to replace the missing values in Test set using the mode/median/mean of the Training set,
+     not from the Test set. Likewise, if you remove values above some threshold in the test case, make sure that the 
+     threshold is derived from the training and not test set. Make sure to calculate the mean (or any other metrics)
+     only on the train data to avoid data leakage to your test set.
+   3. IF the data (lets say train['Loan_AMount']) is Right Skewed. we need to make it into normalized form to do any form of 
+      numerical computation while model training. i.e. Gaussian Curve. For this use Log Transformation method to normalize the curve.
+      train['LoanAmount_log'] = np.log(train['LoanAmount'])
+
+
+   
